@@ -29,7 +29,7 @@ const products = [
     id: 1,
     name: "Velour Mystique",
     category: "unisex",
-    price: "₦20,000",
+    price: 20000 ,
     description:
       "A deep, seductive blend of warm amber and soft vanilla wrapped in delicate florals — smooth, elegant, unforgettable.",
     image: perfume,
@@ -38,7 +38,7 @@ const products = [
     id: 2,
     name: "Noir Éclipse",
     category: "unisex",
-    price: "₦20,000",
+    price: 20000,
     description:
       "Dark woods meet spicy saffron and smoky oud, creating a bold, magnetic scent made for confident nights.",
     image: perfume2,
@@ -47,7 +47,7 @@ const products = [
     id: 3,
     name: "Azure Bloom",
     category: "unisex",
-    price: "₦20,000",
+    price: 20000,
     description:
       "A fresh, aquatic blend of citrus and marine notes with a touch of white musk — clean, invigorating, and endlessly appealing.",
     image: perfume3,
@@ -56,7 +56,7 @@ const products = [
     id: 4,
     name: "Hurrcan",
     category: "men",
-    price: "₦35,000",
+    price: 35000,
     description:
       "A powerful, masculine scent inspired by speed and intensity. Bold cedarwood and black pepper with a warm amber base.",
     image: perfume18,
@@ -65,7 +65,7 @@ const products = [
     id: 5,
     name: "Club De Nuit",
     category: "men",
-    price: "₦50,000",
+    price: 50000,
     description:
       "An iconic fragrance of sophistication. Fresh blackcurrant and birch with a rich, smoky dry-down.",
     image: perfume14,
@@ -74,7 +74,7 @@ const products = [
     id: 6,
     name: "Scandal",
     category: "men",
-    price: "₦30,500",
+    price: 30500,
     description:
       "A daring, provocative scent — honey, blood orange, and patchouli in a bold, unforgettable signature.",
     image: perfume12,
@@ -83,7 +83,7 @@ const products = [
     id: 7,
     name: "9Pm",
     category: "men",
-    price: "₦25,000",
+    price: 25000,
     description:
       "Made for the night. Lavender and apple open into a rich vanilla and musk heart — irresistibly seductive.",
     image: perfume13,
@@ -92,7 +92,7 @@ const products = [
     id: 8,
     name: "Sauvage",
     category: "men",
-    price: "₦48,000",
+    price: 48000,
     description:
       "Raw and noble. Bergamot freshness over a Sichuan pepper heart with a warm Ambroxan signature.",
     image: perfume9,
@@ -101,7 +101,7 @@ const products = [
     id: 9,
     name: "Jean Paul Gaultier",
     category: "men",
-    price: "₦55,000",
+    price: 55000,
     description:
       "A timeless classic. Lavender, mint, and warm vanilla in an iconic masculine fragrance.",
     image: perfume10,
@@ -110,7 +110,7 @@ const products = [
     id: 10,
     name: "GUCCI",
     category: "men",
-    price: "₦80,000",
+    price: 80000,
     description:
       "Italian luxury in a bottle. Citrus top notes over a heart of florals and a rich woody base.",
     image: perfume19,
@@ -119,7 +119,7 @@ const products = [
     id: 11,
     name: "Prada",
     category: "men",
-    price: "₦40,000",
+    price: 40000,
     description:
       "Refined and understated elegance. Neroli, iris, and vetiver in a clean, sophisticated composition.",
     image: perfume20,
@@ -128,7 +128,7 @@ const products = [
     id: 12,
     name: "YSL",
     category: "men",
-    price: "₦39,900",
+    price: 39900,
     description:
       "Sensual and modern. Bergamot and grapefruit open into a lavender heart over a warm amber base.",
     image: perfume21,
@@ -137,7 +137,7 @@ const products = [
     id: 13,
     name: "Carolina",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "A graceful floral bouquet — rose, peony, and jasmine wrapped in soft musk. Feminine and timeless.",
     image: lady1,
@@ -146,7 +146,7 @@ const products = [
     id: 14,
     name: "La Belle",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "A romantic, gourmand fragrance — vanilla, pear, and jasmine in a warm, sensual composition.",
     image: lady2,
@@ -155,7 +155,7 @@ const products = [
     id: 15,
     name: "So Scandal",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "Bold and unapologetic. Mandarin and honey over a rich jasmine and vanilla heart.",
     image: lady3,
@@ -164,7 +164,7 @@ const products = [
     id: 16,
     name: "YSL",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "Intoxicating and modern — coffee, white flowers, and vanilla in a daring feminine statement.",
     image: lady4,
@@ -173,7 +173,7 @@ const products = [
     id: 17,
     name: "Black Opium",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "Addictive and intense. Coffee, vanilla, and white florals in an electrifying, rock-chic signature.",
     image: lady5,
@@ -182,7 +182,7 @@ const products = [
     id: 18,
     name: "Rome Besella",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "A sophisticated Italian-inspired floral — bergamot, rose, and sandalwood in perfect harmony.",
     image: lady6,
@@ -191,7 +191,7 @@ const products = [
     id: 19,
     name: "My Way",
     category: "women",
-    price: "₦39,900",
+    price: 39900,
     description:
       "A radiant floral woody — tuberose and magnolia over a warm base of musk and cedarwood.",
     image: lady7,
@@ -200,7 +200,7 @@ const products = [
     id: 20,
     name: "Jadore",
     category: "women",
-    price: "₦39,900",
+    price: 40500,
     description:
       "The ultimate feminine fragrance. Ylang-ylang, rose, and jasmine in a luxurious floral symphony.",
     image: lady8,
@@ -209,7 +209,7 @@ const products = [
     id: 21,
     name: "Electric Scent Machine",
     category: "scent",
-    price: "₦260,000",
+    price: 260000,
     description:
       "Transform any space into a luxury sensory experience. Our commercial-grade scent diffuser covers up to 5,000 sq ft with precision-controlled fragrance.",
     image: scent,
@@ -226,11 +226,18 @@ const categories = [
 ];
 
 // ─── Main Component ────────────────────────────────────────
-function Products() {
+function Products({ handleAddToCart, addedToCart }) {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedSizes, setSelectedSizes] = useState({});
-  const [addedToCart, setAddedToCart] = useState({});
+  const [flash, setFlash] = useState(null)
   const [previewProduct, setPreviewProduct] = useState(null);
+
+  //flash add to cart
+  function addedFlash(product) {
+    handleAddToCart(product);
+    setFlash();
+    setTimeout(() => setFlash, 900)
+  }
 
   // Filter products by category
   const filteredProducts =
@@ -243,13 +250,7 @@ function Products() {
     setSelectedSizes((prev) => ({ ...prev, [productId]: size }));
   };
 
-  // Cart flash animation per product
-  const handleAddToCart = (productId) => {
-    setAddedToCart((prev) => ({ ...prev, [productId]: true }));
-    setTimeout(() => {
-      setAddedToCart((prev) => ({ ...prev, [productId]: false }));
-    }, 1500);
-  };
+  
 
   return (
     <div className="bg-gray-950 min-h-screen w-full pb-20">
@@ -320,7 +321,7 @@ function Products() {
                 {product.name}
               </h2>
               <p className="text-yellow-500 font-semibold text-lg">
-                {product.price}
+                ₦{product.price.toLocaleString()}
               </p>
               <div className="w-8 h-[1px] bg-yellow-900" />
 
@@ -349,12 +350,8 @@ function Products() {
                   Preview
                 </button>
                 <button
-                  onClick={() => handleAddToCart(product.id)}
-                  className={`w-10 h-10 rounded-sm border flex items-center justify-center transition duration-300 ${
-                    addedToCart[product.id]
-                      ? "border-yellow-500 bg-yellow-500 text-black"
-                      : "border-yellow-700/50 text-gray-400 hover:border-yellow-500 hover:text-yellow-400"
-                  }`}
+                  onClick={() => handleAddToCart(product)}
+                  className={`w-10 h-10 rounded-sm border flex items-center justify-center transition duration-300 border-yellow-700/50 text-gray-400 hover:border-yellow-500 hover:text-yellow-400`}
                 >
                   <GiShoppingCart className="text-lg" />
                 </button>
@@ -366,17 +363,17 @@ function Products() {
 
       {/* ── MODAL ── rendered OUTSIDE the grid */}
       {previewProduct && (
-        // Step A: The dark overlay background
+        // The dark overlay background
         <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 backdrop-blur-sm px-4"
           onClick={() => setPreviewProduct(null)}
         >
-          {/* Step B: The modal card */}
+          {/* The modal card */}
           <div
             className="bg-gray-900 border border-yellow-900/30 rounded-xl overflow-hidden max-w-2xl w-full grid grid-cols-1 md:grid-cols-2 shadow-2xl shadow-yellow-900/20 relative"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Step C: Close button */}
+            {/* Close button */}
             <button
               onClick={() => setPreviewProduct(null)}
               className="absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-black/50 border border-yellow-900/30 flex items-center justify-center text-gray-400 hover:text-yellow-400 hover:border-yellow-500 transition duration-300"
@@ -384,7 +381,7 @@ function Products() {
               <HiX />
             </button>
 
-            {/* Step D: Product Image */}
+            {/* Product Image */}
             <div className="relative">
               <img
                 src={previewProduct.image}
@@ -397,7 +394,7 @@ function Products() {
               </span>
             </div>
 
-            {/* Step E: Product Details */}
+            {/* Product Details */}
             <div className="p-8 flex flex-col gap-4 justify-center">
               {/* Brand */}
               <p
@@ -445,7 +442,7 @@ function Products() {
                   }}
                   className="flex-1 text-black font-semibold py-2 rounded-sm hover:opacity-90 transition duration-300 tracking-wide"
                   onClick={() => {
-                    handleAddToCart(previewProduct.id);
+                    handleAddToCart(previewProduct);
                     setPreviewProduct(null);
                   }}
                 >
@@ -470,5 +467,6 @@ function Products() {
     </div>
   );
 }
+
 
 export default Products;

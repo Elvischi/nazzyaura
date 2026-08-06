@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { GiShoppingCart } from "react-icons/gi";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
+import Cart from "./cart";
 
-const Navbar = () => {
+function Navbar({ addedToCart, cartItems, setCartItems }) {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
 
@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-yellow-900/30">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="max-w-[1450px] mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <Link to="/">
           <p
@@ -67,22 +67,20 @@ const Navbar = () => {
           </Link>
 
           {/* Cart */}
-          <button className="relative text-white hover:text-yellow-400 transition duration-300">
-            <GiShoppingCart className="text-2xl" />
-            <span className="absolute -top-2 -right-2 bg-yellow-500 text-black text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
-              0
-            </span>
-          </button>
+          <Cart
+            addedToCart={addedToCart}
+            cartItems={cartItems}
+            setCartItems={setCartItems}
+          />
         </div>
 
         {/* Mobile — Cart + Hamburger */}
         <div className="flex md:hidden items-center gap-4">
-          <button className="relative text-white hover:text-yellow-400 transition duration-300">
-            <GiShoppingCart className="text-2xl" />
-            <span className="absolute -top-2 -right-2 bg-yellow-500 text-black text-xs font-bold w-4 h-4 rounded-full flex items-center justify-center">
-              1
-            </span>
-          </button>
+          <Cart
+            addedToCart={addedToCart}
+            cartItems={cartItems}
+            setCartItems={setCartItems}
+          />
 
           <button
             onClick={() => setIsOpen(!isOpen)}
@@ -142,5 +140,7 @@ const Navbar = () => {
     </nav>
   );
 };
+
+
 
 export default Navbar;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from "react-router-dom";
 import { HiX } from "react-icons/hi";
-import MapView from "./map.jsx";
+// import MapView from "./map.jsx";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdAttachEmail } from "react-icons/md";
 import { FaMapLocationDot, FaArrowRight } from "react-icons/fa6";
@@ -92,7 +92,7 @@ function Home(){
 
 function Header() {
   return (
-    <div className="relative min-h-[90vh] w-full bg-black overflow-hidden mt-5">
+    <div className="relative min-h-[90vh] w-full bg-black overflow-hidden ">
 
       {/* Background Image - right side only */}
       <div

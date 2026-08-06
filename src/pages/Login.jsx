@@ -1,12 +1,29 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Bg from "../images/per3.jpg";
 import { Link } from "react-router-dom";
 
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
+  const navigate = useNavigate();
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [submit, setSubmit] = useState(false);
+
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (!email || !password) {
+      alert("Login your details");
+    }
+      else {
+      navigate("/dashboard");
+    }
+
+  }
 
   return (
-    <div className="w-screen h-screen flex items-center justify-center bg-gray-950 mt-10">
+    <div className="w-screen h-screen flex items-center justify-center bg-gray-950">
       <div className="grid grid-cols-2 rounded-2xl overflow-hidden shadow-2xl shadow-yellow-900/20 max-w-4xl w-full">
         {/* LEFT - Image Side */}
         <div
@@ -40,13 +57,16 @@ function Login() {
             Please login to your account
           </p>
 
-          <form className="flex flex-col gap-4">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-4">
             {/* Email */}
             <div className="flex flex-col gap-1">
               <label className="text-gray-400 text-sm">Email</label>
               <input
                 type="email"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+
                 className="bg-transparent border border-yellow-700/50 focus:border-yellow-500 outline-none text-white rounded-md p-3 placeholder-gray-600 transition duration-300"
               />
             </div>
@@ -57,6 +77,8 @@ function Login() {
               <div className="relative">
                 <input
                   type={showPassword ? "text" : "password"}
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
                   placeholder="Enter your password"
                   className="w-full bg-transparent border border-yellow-700/50 focus:border-yellow-500 outline-none text-white rounded-md p-3 placeholder-gray-600 transition duration-300"
                 />
@@ -83,6 +105,8 @@ function Login() {
             {/* Login Button */}
             <button
               type="submit"
+              value={submit}
+              onClick={() => setSubmit(submit)}
               style={{
                 background: "linear-gradient(135deg, #c9a84c, #f5d485)",
               }}
@@ -94,7 +118,7 @@ function Login() {
 
           {/* Register Link */}
           <p className="mt-8 text-gray-500 text-sm text-center">
-            Don't have an account?{" "}
+            Don't have an account?
             <Link
               to="/signup"
               className="text-yellow-500 hover:text-yellow-300 transition"

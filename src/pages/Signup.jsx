@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Bg from "../images/per3.jpg";
 
 function Signup() {
@@ -13,6 +13,7 @@ function Signup() {
     repeatPassword: "",
   });
   const [passwordError, setPasswordError] = useState("");
+  const navigate = useNavigate();
 
   // Handle input changes
   const handleChange = (e) => {
@@ -22,12 +23,17 @@ function Signup() {
   // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.password !== formData.repeatPassword) {
+    if(!formData.firstname || !formData.lastname || !formData.email || !formData.password || !formData.repeatPassword) {
+      alert("Please fill in all fields");
+      return;
+    }
+    else if (formData.password !== formData.repeatPassword) {
       setPasswordError("Passwords do not match");
       return;
     }
     setPasswordError("");
     console.log("Form submitted:", formData);
+    navigate("/welcome");
   };
 
   return (
@@ -183,7 +189,7 @@ function Signup() {
 
           {/* Login link */}
           <p className="mt-6 text-gray-500 text-sm text-center">
-            Already have an account?{" "}
+            Already have an account?
             <Link
               to="/login"
               className="text-yellow-500 hover:text-yellow-300 transition"
